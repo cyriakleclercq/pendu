@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #D6FFF7 !important;
+}
+
+header {
+
+    border-radius: 30px;
+    background: #9D89C1;
+    color: #44EB69;
+}
+
+section {
+
+    border-radius: 30px;
+    background: #B643D3;
+}
+
+footer {
+
+    border-radius: 30px;
+    background: #BB93A9;
+}
+
+#propos {
+    font-size: 30px;
+}
+
+#prop {
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+#reponse {
+    color: #141B98;
+    font-size: 25px;
+}
+
+#felicitations {
+    font-size: 40px;
+    color: #FF431E;
+}
