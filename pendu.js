@@ -7,6 +7,10 @@ var choix_ordi = 0;
 
 var nbr_vie = 10;
 
+var nbr_vie2 = 7;
+
+var nbr_vie3 = 5;
+
 // fonction aleatoire
 
 function alea () {
@@ -18,7 +22,7 @@ function alea () {
 // choix aleatoire dans le tableau
 
      choix_ordi = tableau[calc_ordi];
-    document.getElementById("felicitations").innerHTML = "";
+
 
 }
 
@@ -88,7 +92,6 @@ document.getElementById("bouton").addEventListener('click', function () {
         if (text == choix_ordi[i]) {
 
             document.getElementById("resultat" + i).innerHTML = " " + choix_ordi[i];
-            document.getElementById("reponse").innerHTML = "Bonne reponse";
             mot_correct++;
         }
 }
@@ -99,6 +102,7 @@ document.getElementById("bouton").addEventListener('click', function () {
 
         document.getElementById("felicitations").innerHTML = "Congratulation";
         document.getElementById("alpha").innerHTML = "";
+        mot_correct = 0;
         alea();
     }
 
@@ -112,7 +116,7 @@ document.getElementById("bouton").addEventListener('click', function () {
 //  raz apres la fin des vies et affichage d'un message loser
 
     if (nbr_vie === 0) {
-        document.getElementById("felicitations").innerHTML = "LOSER";
+        document.getElementById("felicitations").innerHTML = "LOSER" +" " + "mot recherché : " + " "  + choix_ordi;
         alea();
 
     } else if (nbr_vie < 0) {
