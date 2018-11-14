@@ -7,9 +7,25 @@ var choix_ordi = 0;
 
 var nbr_vie = 10;
 
-var nbr_vie2 = 7;
+// bouton facile
+document.getElementById("facile").addEventListener("click", function () {
+    nbr_vie = 10;
+    document.getElementById("nb_vie").innerHTML = "10";
 
-var nbr_vie3 = 5;
+});
+
+// bouton normal
+document.getElementById("normal").addEventListener("click", function () {
+    nbr_vie = 7;
+    document.getElementById("nb_vie").innerHTML = "7";
+});
+
+// bouton difficile
+document.getElementById("difficile").addEventListener("click", function () {
+    nbr_vie = 5;
+    document.getElementById("nb_vie").innerHTML = "5";
+});
+
 
 // fonction aleatoire
 
