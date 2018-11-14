@@ -18,6 +18,7 @@ function alea () {
 // choix aleatoire dans le tableau
 
      choix_ordi = tableau[calc_ordi];
+    document.getElementById("felicitations").innerHTML = "";
 
 }
 
@@ -87,6 +88,7 @@ document.getElementById("bouton").addEventListener('click', function () {
         if (text == choix_ordi[i]) {
 
             document.getElementById("resultat" + i).innerHTML = " " + choix_ordi[i];
+            document.getElementById("reponse").innerHTML = "Bonne reponse";
             mot_correct++;
         }
 }
@@ -96,6 +98,7 @@ document.getElementById("bouton").addEventListener('click', function () {
     if ( mot_correct === choix_ordi.length) {
 
         document.getElementById("felicitations").innerHTML = "Congratulation";
+        document.getElementById("alpha").innerHTML = "";
         alea();
     }
 
